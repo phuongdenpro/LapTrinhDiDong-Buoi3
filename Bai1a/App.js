@@ -12,24 +12,39 @@ const App = () => {
         </View>
         <View style={styles.text}>
           <View style={styles.text1}>
-            <Text style={[{fontSize: 40}, {color:'blue'}]}>GROW YOUR BUSINESS</Text>
+            <Text
+              style={[
+                { fontSize: 40 },
+                { color: "black" },
+                { fontWeight: "bold", textAlign:'center',width:300,height:100 },
+              ]}
+            >
+              GROW YOUR BUSINESS
+            </Text>
           </View>
           <View style={styles.text2}>
-            <Text>
+            <Text
+              style={[
+                { fontSize: 17 },
+                { color: "black" },
+                { fontWeight: "bold" },
+                { textAlign: "center", paddingRight: 40 },
+              ]}
+            >
               We will help you to grow your business using online server
             </Text>
           </View>
         </View>
         <View style={styles.bottom}>
           <TouchableOpacity style={styles.btnLogin}>
-            <Text>Login</Text>
+            <Text style={styles.textBtn}>LOGIN</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.btnSign}>
-            <Text>Sign up</Text>
+            <Text style={styles.textBtn}>SIGN UP</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.bottomText}>
-          <Text color='red'>How we work?</Text>
+          <Text style={styles.textBottom}>HOW WE WORK?</Text>
         </View>
       </LinearGradient>
     </View>
@@ -49,19 +64,19 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   text: {
-    flex: 1,
+    flex: 2,
   },
   text1: {
-    flex: 1
-    // alignItems: "center",
-    // fontSize: 40,
-    // fontWeight: "bold",
-    // color: 'black',
+    flex: 1,
+    alignItems: "center",
+    marginTop:50
   },
   text2: {
+    width: "100%",
     flex: 1,
     marginHorizontal: 20,
     textAlign: "center",
+    marginTop:70
   },
   bottom: {
     flex: 1,
@@ -71,17 +86,23 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#E3C000",
     height: 50,
-    marginHorizontal: 30,
+    marginHorizontal: 40,
     justifyContent: "center",
     alignItems: "center",
+    marginTop:50
   },
   btnSign: {
     flex: 1,
     backgroundColor: "#E3C000",
     height: 50,
-    marginHorizontal: 30,
+    marginHorizontal: 40,
     justifyContent: "center",
     alignItems: "center",
+    marginTop:50
+  },
+  textBtn:{
+    fontSize:17,
+    fontWeight:'bold'
   },
 
   bottomText: {
@@ -90,5 +111,9 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     alignItems: "center",
   },
+  textBottom:{
+    fontSize:20,
+    fontWeight:'bold'
+  }
 });
 export default App;
