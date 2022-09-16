@@ -6,13 +6,13 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 const App = () => {
   return (
     <View style={styles.container}>
-      <LinearGradient colors={["#C9EFEF", "#2BF4AE"]} start={[0.9, 0.1]}>
+      <LinearGradient colors={["#C9EFEF", "#2BF4AE"]} start={[1, 0.1]}>
         <View style={styles.image}>
           <Image source={require("./images/circle.png")}></Image>
         </View>
         <View style={styles.text}>
           <View style={styles.text1}>
-            <Text>GROW YOUR BUSINESS</Text>
+            <Text style={[{fontSize: 40}, {color:'blue'}]}>GROW YOUR BUSINESS</Text>
           </View>
           <View style={styles.text2}>
             <Text>
@@ -29,7 +29,7 @@ const App = () => {
           </TouchableOpacity>
         </View>
         <View style={styles.bottomText}>
-          <Text>How we work?</Text>
+          <Text color='red'>How we work?</Text>
         </View>
       </LinearGradient>
     </View>
@@ -39,7 +39,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  //  backgroundColor: "#2BF4AE",
+    // backgroundColor: "#2BF4AE",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -52,11 +52,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   text1: {
-    flex: 1,
-    alignItems: "center",
-    fontSize: 40,
-    fontWeight: "bold",
-    color: 'black',
+    flex: 1
+    // alignItems: "center",
+    // fontSize: 40,
+    // fontWeight: "bold",
+    // color: 'black',
   },
   text2: {
     flex: 1,
