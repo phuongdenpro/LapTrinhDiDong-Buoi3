@@ -6,7 +6,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 const App = () => {
   return (
     <View style={styles.container}>
-      <LinearGradient colors={["#C9EFEF", "#2BF4AE"]} start={[1, 0.1]}>
+      <LinearGradient colors={["#C9EFEF", "#2BF4AE"]} start={[0.9, 0.1]}>
         <View style={styles.image}>
           <Image source={require("./images/circle.png")}></Image>
         </View>
