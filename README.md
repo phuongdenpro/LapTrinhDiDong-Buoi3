@@ -1,5 +1,5 @@
 # LapTrinhDiDong-Buoi3
-
+3
 Minh chứng:
 
 Bài 1A:
